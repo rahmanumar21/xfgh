@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_destination">Search Destination</string>
+    <string name="where_are_we">Where are we</string>
+    <string name="top_places">Top Places</string>
+    <string name="see_all">See All</string>
+    <string name="recent">Recent</string>
+    <string name="going_today">going today?</string>
+</resources>
