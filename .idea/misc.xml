@@ -11,9 +11,14 @@
         <entry key="app/src/main/res/drawable/ic_baseline.xml" value="0.1875" />
         <entry key="app/src/main/res/drawable/ic_star.xml" value="0.18385416666666668" />
         <entry key="app/src/main/res/drawable/search_bg.xml" value="0.2759259259259259" />
+        <entry key="app/src/main/res/layout/activity_auth.xml" value="0.221484375" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.15773309475307268" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_on_board.xml" value="0.221484375" />
+        <entry key="app/src/main/res/layout/activity_sign_in_fragment.xml" value="0.2109375" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.221484375" />
         <entry key="app/src/main/res/layout/first_activity.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/info_app_layout.xml" value="0.221484375" />
         <entry key="app/src/main/res/layout/item_container_location.xml" value="0.2468104125595473" />
         <entry key="app/src/main/res/layout/recents_row_item.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/second_layout.xml" value="0.232421875" />
