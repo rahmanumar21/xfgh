@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="vistula.ar.vocationtourapp" >
+    package="vistula.ar.vocationtourapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,7 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.VocationTourApp" >
+        android:theme="@style/Theme.VocationTourApp">
+        <activity
+            android:name=".fragments.SignUpFragment"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
         <activity
             android:name=".fragments.SignInFragment"
             android:exported="false" />
@@ -22,7 +28,7 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
