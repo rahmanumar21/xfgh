@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPostProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@color/colorLightGrey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtPostName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="John Doe"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imgPostProfile"
+            app:layout_constraintTop_toTopOf="@+id/imgPostProfile" />
+
+        <TextView
+            android:id="@+id/txtPostDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="04 Jun, 2022"
+            android:textColor="@color/colorLightGrey"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgPostProfile"
+            app:layout_constraintStart_toEndOf="@+id/imgPostProfile"
+            app:layout_constraintTop_toBottomOf="@+id/txtPostName" />
+
+        <TextView
+            android:id="@+id/txtPostDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lorem ipsum vink ipsum lorem"
+            app:layout_constraintStart_toStartOf="@+id/imgPostProfile"
+            app:layout_constraintTop_toBottomOf="@+id/imgPostProfile" />
+
+        <ImageView
+            android:id="@+id/imgPostPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:src="@color/colorLightGrey"
+            app:layout_constraintTop_toBottomOf="@+id/txtPostDesc"
+            tools:layout_editor_absoluteX="30dp" />
+
+        <ImageButton
+            android:id="@+id/btnPostLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPostPhoto"
+            app:srcCompat="@drawable/ic_favorite_outline" />
+
+        <ImageButton
+            android:id="@+id/btnPostComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/btnPostLike"
+            app:layout_constraintStart_toEndOf="@+id/btnPostLike"
+            app:layout_constraintTop_toTopOf="@+id/btnPostLike"
+            app:srcCompat="@drawable/ic_comment" />
+
+        <TextView
+            android:id="@+id/txtPostLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="12 Likes"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/btnPostLike"
+            app:layout_constraintTop_toBottomOf="@+id/btnPostLike" />
+
+        <TextView
+            android:id="@+id/txtPostComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="View all 5 comments"
+            android:textColor="@color/colorLightGrey"
+            app:layout_constraintStart_toStartOf="@+id/txtPostLikes"
+            app:layout_constraintTop_toBottomOf="@+id/txtPostLikes" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="8dp"
+            android:background="#ccc"
+            app:layout_constraintStart_toStartOf="@+id/txtPostComments"
+            app:layout_constraintTop_toBottomOf="@+id/txtPostComments" />
+
+        <ImageButton
+            android:id="@+id/btnPostOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/txtPostDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.999"
+            app:layout_constraintStart_toEndOf="@+id/imgPostProfile"
+            app:layout_constraintTop_toTopOf="@+id/txtPostName"
+            app:layout_constraintVertical_bias="0"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
